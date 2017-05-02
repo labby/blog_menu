@@ -37,7 +37,7 @@ $module_version		= '0.22';
 $module_platform	= '1.x';
 $module_author		= 'Erik Coenjaerts';
 $module_license		= 'GNU General Public License';
-$module_description	= 'Snippet to display a blog-menu containing active groups and history per month of the news module. Call it by using function: display_blog_menu($page_id,$date_option,$group_header,$history_header,$display_option). For more information, see the included README';
+$module_description	= 'Snippet to display a blog-menu containing active groups and history per month of the news module. Call it by using function: display_blog_menu($page_id,$date_option,$group_header,$history_header,$display_option). For more information, see the included howto.txt';
 $module_home		= 'http://cms-lab.com/';
 $module_guid		= '07ffa8db-4dc2-42d5-841d-e6d83a869de7';
 ?>
