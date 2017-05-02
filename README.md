@@ -1,14 +1,33 @@
------------------------------------------------------------------------------------------
- Code snippet Blog Menu 
- Licencsed under GNU, written by Erik Coenjaerts (Eki)
------------------------------------------------------------------------------------------
+### Blog Menu
+============
 
-*****************************************************************************************
- SHORT INSTALLATION GUIDE:
-*****************************************************************************************
- o download the Blog Menu zip file 
- o log into the backend and install the module as usual
- o replace view.php in the news module directory with the included news_view.php and rename it back to view.php
+Blog Menu ( coded by Erik Coenjaerts (Eki) ) is a snippet to display a blog-menu containing active groups and history per month of the [LEPTON CMS][1] news module.<br /><br />
+Call it by using function: display_blog_menu($page_id,$date_option,$group_header,$history_header,$display_option). <br />
+For more information, see the included README
+
+
+#### Requirements
+
+* [LEPTON CMS][1]
+
+#### Installation
+
+* download latest [blog_menu.zip][2] installation archive
+* in CMS backend select the file from "Add-ons" -> "Modules" -> "Install module"
+
+#### License
+
+The snippet is licensed under GNU
+
+#### Notice
+
+Not tested if it runs with latest release of LEPTON news module (view.php)
+
+[1]: http://lepton-cms.org "LEPTON CMS"
+[2]: http://www.lepton-cms.com/lepador/modules/blog_menu.php
+
+
+
 
 
 *****************************************************************************************
@@ -48,34 +67,3 @@ Example for customised call:
  - within a code module use: display_blog_menu();
  - remind the ; at the end of the code line
 
-*****************************************************************************************
- STYLE THE OUTPUTS ACCORDING YOUR NEEDS
-*****************************************************************************************
-The output can be customized to your needs without touching the code itself, by the use of CSS definitions. 
-Open a code page and enter the following code:
-
-echo "<div id=\"myblog\">";
-display_blog_menu(12);
-echo "</div>";
-
-The additional div section is used to restrict the style defintions to the news only, without influencing 
-the rest of your layout. The following CSS examples needs to be added to the CSS file of your template.
-
-Q: The font size of the news text is too big?
-#myblog p { font-size:80%; }
-
-Q: You want the news title to show up in brown?
-#myblog strong { color:brown; }
-
-Q: The news header should have a left brown border?
-#myblog h1 { border:1px dotted brown; margin:5px; padding:0; }
-
-Q: You don´t like the bullets in the unsorted list
-#myblog ul{ list-style-type:none; }
-
-Please note: 
-I will not aks any questions on CSS formating. A lot of pages are available for free in the internet.
-See http://www.css4you.de/ or http://glish.com/css/ for example, or use a search engine.
-
-Have fun.
-Erik Coenjaerts (Eki)
