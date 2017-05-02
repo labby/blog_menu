@@ -24,7 +24,7 @@ Optional Parameters:
   display_option...     0:=show both history and categories (default); 1:=show only history; 2:=show only categories
 
 Example for customised call:
-<?php ;?>
+<?php display_blog_menu(8,0,'<h2 class="blog_menu">Categories</h2>','<h2 class="blog_menu">History</h2>',0);?>
 
 *****************************************************************************************
  TROUBLE SHOOTING
