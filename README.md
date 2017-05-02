@@ -2,7 +2,14 @@
 ============
 
 Blog Menu ( coded by Erik Coenjaerts (Eki) ) is a snippet to display a blog-menu containing active groups and history per month of the [LEPTON CMS][1] news module.<br /><br />
-Call it by using function: display_blog_menu($page_id,$date_option,$group_header,$history_header,$display_option). <br />
+Call it by using function:
+
+```code
+
+display_blog_menu( $page_id, $date_option, $group_header, $history_header, $display_option).
+
+```
+
 For more information, see the included howto.txt
 
 

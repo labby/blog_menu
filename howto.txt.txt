@@ -26,6 +26,21 @@ Optional Parameters:
 Example for customised call:
 <?php display_blog_menu(8,0,'<h2 class="blog_menu">Categories</h2>','<h2 class="blog_menu">History</h2>',0);?>
 
+Another example (L* >= 2.4)
+<?php
+
+//	get an instance
+$oBlockMenu = blog_menu::getInstance();
+
+//	set some params	
+$oBlockMenu->group_header = "<h2>Gruppen</h2>";
+$oBlockMenu->history_header = "<h2>Archive</h2>";
+
+//	get the block
+$display_blog_menu = $oBlockMenu->get_blog_menu( 2 );
+
+?>
+
 *****************************************************************************************
  TROUBLE SHOOTING
 *****************************************************************************************
