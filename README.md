@@ -28,7 +28,7 @@ The snippet is licensed under GNU
 
 #### Notice
 
-Not tested if it runs with latest release of LEPTON news module (view.php)
+Tested with LEPTON-CMS >= 2.4
 
 [1]: http://lepton-cms.org "LEPTON CMS"
 [2]: http://www.lepton-cms.com/lepador/modules/blog_menu.php
