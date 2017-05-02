@@ -51,7 +51,7 @@ if (!function_exists('display_blog_menu')) {
 					$output .=	"<li><a href=\"" .WB_URL.PAGES_DIRECTORY .$page_link .PAGE_EXTENSION ."?g=".$group['group_id']."\">" .$group['title'] ."</a> (".$num.")</li>\n";
 	      		}
 			}
-			$output = "<ul>".$output."</ul>";
+			$output = "<ul class='blog_menu'>".$output."</ul>";
 	        echo $output;
 		}
 		if($display_option==0 or $display_option==1){ //show history
@@ -78,7 +78,7 @@ if (!function_exists('display_blog_menu')) {
 	                $output .= "<li><a href=\"" .WB_URL.PAGES_DIRECTORY .$page_link .PAGE_EXTENSION ."?y=".$history['y']."&m=".$history['m']."&method=".$date_option."\">" .$history['mo']." ".$history['y']."</a> (".$history['total'].")</li>\n";
 	            	}
 	        	}
-			$output = "<ul>".$output."</ul>";
+			$output = "<ul class='blog_menu'>".$output."</ul>";
 	        echo $output;
 		}
 
