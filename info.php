@@ -33,7 +33,7 @@ if (defined('LEPTON_PATH')) {
 $module_directory	= 'blog_menu';
 $module_name		= 'Blog Menu';
 $module_function	= 'snippet';
-$module_version		= '0.22';
+$module_version		= '0.2.2';
 $module_platform	= '1.x';
 $module_author		= 'Erik Coenjaerts';
 $module_license		= 'GNU General Public License';
