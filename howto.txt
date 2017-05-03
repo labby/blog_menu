@@ -1,16 +1,20 @@
 *****************************************************************************************
- USING THE SNIPPET FUNCTION:
+[1]	USING THE SNIPPET FUNCTION:
 *****************************************************************************************
 Once the module is installed, it can be invoked either from the index.php file of your template or from any code module section.
 
-From template index.php (if page_id of news_page is 8):
-<?php display_blog_menu(8); ?>
+[1.1]	From template index.php (if page_id of news_page is 8):
 
-From a code module:
+<?php 
+	display_blog_menu(8);
+?>
+
+[1.2]	From a code module:
+
 display_blog_menu(8);
 
 *****************************************************************************************
- ADDITIONAL PARAMETERS
+[2] ADDITIONAL PARAMETERS
 *****************************************************************************************
 For a more customised output, you can pass over serveral parameters to the function explained below.
 
@@ -23,26 +27,28 @@ Optional Parameters:
   history_header... 	header above the history menu (default: '<h1>History</h1>')
   display_option...     0:=show both history and categories (default); 1:=show only history; 2:=show only categories
 
-Example for customised call:
-<?php display_blog_menu(8,0,'<h2 class="blog_menu">Categories</h2>','<h2 class="blog_menu">History</h2>',0);?>
+[2.1]	Example for customised call:
+<?php
+	display_blog_menu(8, 0, '<h2 class="blog_menu">Categories</h2>', '<h2 class="blog_menu">History</h2>', 0);
+?>
 
-Another example (L* >= 2.4)
+[2.2]	Another example (L* >= 2.4)
 <?php
 
 //	get an instance
-$oBlockMenu = blog_menu::getInstance();
+$oBlogMenu = blog_menu::getInstance();
 
 //	set some params	
-$oBlockMenu->group_header = "<h2>Gruppen</h2>";
-$oBlockMenu->history_header = "<h2>Archive</h2>";
+$oBlogMenu->group_header = "<h2>" . $TEXT['GROUP'] . "</h2>";
+$oBlogMenu->history_header = "<h2>Archive</h2>";
 
 //	get the block
-$display_blog_menu = $oBlockMenu->get_blog_menu( 2 );
+echo $oBlogMenu->get_blog_menu( 2 );
 
 ?>
 
 *****************************************************************************************
- TROUBLE SHOOTING
+[3] TROUBLE SHOOTING
 *****************************************************************************************
  - pass over at least the first argument ($page_id)
  - mask text with "your text " or 'your text '
